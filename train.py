@@ -88,7 +88,7 @@ for idx in {0, 1, 2, 3}:
 
         test_accuracy = 1.0 - float(test_error_count) / float(len(test_dataset))
 
-        results[epoch][idx-1] = test_accuracy
+        results[epoch][idx] = test_accuracy
 
         print('%d: %f' % (epoch, test_accuracy))
         if test_accuracy > best_accuracy:
